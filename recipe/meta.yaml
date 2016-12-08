@@ -1,6 +1,6 @@
 {% set name = "mmtf-python" %}
-{% set version = "1.0.4" %}
-{% set sha256 = "8aa92bc66b055f952c88f2dc33cd5dd52e39df376bd8ad88cca1cc344b2990da" %}
+{% set version = "1.0.5" %}
+{% set sha256 = "121ce4555915e16e5009db0e22d33b57df4aeebad2cc358e5be7ec064630fb68" %}
 
 package:
   name: {{ name|lower }}
@@ -40,7 +40,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   # will be added in the next version
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.txt'
+  license_file: 'LICENSE.txt'
   summary: 'A decoding library for the PDB mmtf format'
   description: |
     The macromolecular transmission format (MMTF) is a binary encoding of
