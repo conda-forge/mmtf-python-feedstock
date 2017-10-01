@@ -1,6 +1,6 @@
 {% set name = "mmtf-python" %}
-{% set version = "1.0.7" %}
-{% set sha256 = "e91c9ec2aef02c9a1136f0e481b934c18667f04584ad29e28855fc3316c6f055" %}
+{% set version = "1.0.9" %}
+{% set sha256 = "f89dd97a31cfd63906a234fce8df055603e880b5eeddfdab09f159c2b9563546" %}
 
 package:
   name: {{ name|lower }}
