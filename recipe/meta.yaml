@@ -1,6 +1,6 @@
 {% set name = "mmtf-python" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "003fe6dc090d958901d11a2fd83e87533fe7a726a95973d1cd038a60ef293c36" %}
+{% set version = "1.1.2" %}
+{% set sha256 = "a5caa7fcd2c1eaa16638b5b1da2d3276cbd3ed3513f0c2322957912003b6a8df" %}
 
 package:
   name: {{ name|lower }}
@@ -14,12 +14,12 @@ source:
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
